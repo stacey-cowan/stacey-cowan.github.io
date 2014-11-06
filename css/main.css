@@ -41,17 +41,15 @@ body {
 }
 
 .banner {
-    padding-left: 40%;
+    padding-left: 30%;
 }
 
 @media only screen and (min-width: 25em;){
-    
+
 }
 
 @media only screen and (min-width:38em;){
-    .banner {
-        padding-left:20%;
-    }
+
 }
 
 @media only screen and (min-width: 60em;){
