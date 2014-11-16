@@ -49,17 +49,25 @@ body {
     padding-left: 30%;
 }
 
+.center {
+    text-align:center;
+}
+
 .intro {
     padding-left: 40%;
 }
 
 .banner {
-    padding-bottom: 150px;
+    padding:100px 0 150px;
 }
 
 .portfolio {
     background-color: #6DCBB8;
     padding: 30px 0;
+}
+
+.contact {
+    background-color: #F0FFF0;
 }
 
 
@@ -90,7 +98,7 @@ body {
     }
     
     .intro {
-        padding-left:15%;
+        padding-left:10%;
     }
     
 }
