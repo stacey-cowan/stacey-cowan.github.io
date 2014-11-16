@@ -31,7 +31,7 @@ body {
 }
 
 .logo {
-    width: 115px;
+    width: 75px;
 }
 
 .masthead {
@@ -41,12 +41,16 @@ body {
     padding-top: 15px;
 }
 
+.title {
+    padding: 200px 0 100px;
+}
+
 .off-center {
     padding-left: 30%;
 }
 
 .intro {
-    padding-left: 30%;
+    padding-left: 40%;
 }
 
 .banner {
@@ -60,17 +64,21 @@ body {
 
 
 /* -------------------------- Portfolio Piece JS Classes ------------------------------*/
+
 .portfolio-piece1, .portfolio-piece2, .portfolio-piece3, .portfolio-piece4, .portfolio-piece5, .portfolio-piece6, .portfolio-piece7 {
 }
 
 .desc1, .desc2, .desc3, .desc4, .desc5, .desc6, .desc7 {
     position:relative;
     opacity: 0;
+    margin-top: -150px;
+    transition: all 250ms linear;
 }
 
 .desc1[data-state="active"], .desc2[data-state="active"], .desc3[data-state="active"], .desc4[data-state="active"], .desc5[data-state="active"], .desc6[data-state="active"], .desc7[data-state="active"] {
     position:relative;
     opacity: 1;
+    margin-top: 0;
 }
     
 /* -------------------------- Media Queries ------------------------------*/
