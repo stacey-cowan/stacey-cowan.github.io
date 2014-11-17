@@ -1,6 +1,5 @@
 var $win = $(window);
 var $introSection = $('.intro-section')
-var $portfolioSection = $('.portfolio-section')
 
 $win.on('scroll', function () {
     var scrollPos = $win.scrollTop();
