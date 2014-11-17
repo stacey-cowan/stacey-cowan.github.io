@@ -73,13 +73,13 @@ body {
 }
 
 .portfolio-desktop {
-    display:block;
+    display:none;
     background-color: #6DCBB8;
     padding: 30px 0;
 }
 
 .portfolio-mobile {
-    display:none;
+    display:block;
     background-color: #6DCBB8;
     padding: 30px 0;
 }
