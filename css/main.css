@@ -78,12 +78,18 @@ body {
     padding: 30px 0;
 }
 
+.portfolio-mobile {
+    display:block;
+    background-color: #6DCBB8;
+    padding: 30px 0;
+}
+
 .contact-section {
     background-color: #F0FFF0;
 }
 
 
-/* -------------------------- Portfolio Piece JS Classes ------------------------------*/
+/* -------------------------- Portfolio Desktop ------------------------------*/
 
 .caption {
     display: inline-block;
@@ -129,6 +135,23 @@ body {
     opacity: .8;
 }
 
+/* -------------------------- Portfolio Mobile ------------------------------*/
+
+.portfolio-piece1, .portfolio-piece2, .portfolio-piece3, .portfolio-piece4, .portfolio-piece5, .portfolio-piece6, .portfolio-piece7 {
+}
+
+.desc1, .desc2, .desc3, .desc4, .desc5, .desc6, .desc7 {
+    position:relative;
+    opacity: 0;
+    margin-top: -150px;
+    transition: all 250ms linear;
+}
+
+.desc1[data-state="active"], .desc2[data-state="active"], .desc3[data-state="active"], .desc4[data-state="active"], .desc5[data-state="active"], .desc6[data-state="active"], .desc7[data-state="active"] {
+    position:relative;
+    opacity: 1;
+    margin-top: 0;
+}
     
 /* -------------------------- Media Queries ------------------------------*/
 @media only screen and (min-width: 25em){
@@ -162,11 +185,14 @@ body {
         display:block;
     }
     
+    .portfolio-mobile {
+        display:none;
+    }
 }
 @media only screen and (min-width: 60em){
     
-    .portfolio-desktop {
-        display:block;
+    .portfolio-mobile {
+        display:none;
     }
     
 }
