@@ -156,7 +156,7 @@ body {
   
 }
 
-@media only screen and (min-width: 54em){
+@media only screen and (min-width: 49em){
     
     .portfolio-desktop {
         display:block;
