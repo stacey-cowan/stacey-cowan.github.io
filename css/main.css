@@ -73,13 +73,13 @@ body {
 }
 
 .portfolio-desktop {
-    display:none;
+    display:block;
     background-color: #6DCBB8;
     padding: 30px 0;
 }
 
 .portfolio-mobile {
-    display:block;
+    display:none;
     background-color: #6DCBB8;
     padding: 30px 0;
 }
@@ -118,7 +118,6 @@ body {
     height: 30%;
     background: #103E39;
     font-size: 40px;
-    font-weight: 300;
 }
 
 .caption::after {
@@ -138,6 +137,7 @@ body {
 /* -------------------------- Portfolio Mobile ------------------------------*/
 
 .portfolio-piece1, .portfolio-piece2, .portfolio-piece3, .portfolio-piece4, .portfolio-piece5, .portfolio-piece6, .portfolio-piece7 {
+    padding: 50px 3% 0;
 }
 
 .desc1, .desc2, .desc3, .desc4, .desc5, .desc6, .desc7 {
@@ -156,6 +156,14 @@ body {
 /* -------------------------- Media Queries ------------------------------*/
 @media only screen and (min-width: 25em){
     
+    .portfolio-desktop {
+        display:none;
+    }
+    
+    .portfolio-mobile {
+        display:block;
+    }
+    
     .off-center {
         padding-left: 0;
         text-align:center;
@@ -169,6 +177,14 @@ body {
 
 @media only screen and (min-width:38em){
     
+    .portfolio-desktop {
+        display:none;
+    }
+    
+    .portfolio-mobile {
+        display:block;
+    }
+    
     .logo {
         width: 75px;
     }
@@ -179,17 +195,22 @@ body {
   
 }
 
-@media only screen and (min-width: 49em){
+@media only screen and (min-width: 55em){
     
     .portfolio-desktop {
-        display:block;
+        display:none;
     }
     
     .portfolio-mobile {
-        display:none;
+        display:block;
     }
+
 }
 @media only screen and (min-width: 60em){
+    
+    .portfolio-desktop {
+        display: block;
+    }
     
     .portfolio-mobile {
         display:none;
