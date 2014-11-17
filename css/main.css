@@ -153,13 +153,16 @@ body {
     .intro {
         padding-left:20%;
     }
+  
+}
+
+@media only screen and (min-width: 54em){
     
     .portfolio-desktop {
         display:block;
     }
-  
+    
 }
-
 @media only screen and (min-width: 60em){
     
     .portfolio-desktop {
