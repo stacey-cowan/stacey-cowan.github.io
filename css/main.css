@@ -31,10 +31,13 @@ body {
 }
 
 .logo {
-    width: 75px;
+    width: 50px;
 }
 
 .masthead {
+    position:fixed;
+    width: 100%;
+    z-index:1;
     text-align: center;
     background-color: #6DCBB8;
     margin: 0;
@@ -136,6 +139,10 @@ body {
 }
 
 @media only screen and (min-width:38em){
+    
+    .logo {
+        width: 75px;
+    }
     
     .intro {
         padding-left:20%;
