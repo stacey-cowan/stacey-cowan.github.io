@@ -1,3 +1,5 @@
+
+/*------- Portfolio Click -----------*/
 var desc1 = $('.desc1');
 
 var portfolioPiece1 = $('.portfolio-piece1');
@@ -136,3 +138,6 @@ var portfolioPiece7ClickHandler = function() {
 };
 
 portfolioPiece7.on('click', portfolioPiece7ClickHandler);
+
+
+/*--------

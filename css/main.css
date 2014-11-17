@@ -73,21 +73,50 @@ body {
 
 /* -------------------------- Portfolio Piece JS Classes ------------------------------*/
 
-.portfolio-piece1, .portfolio-piece2, .portfolio-piece3, .portfolio-piece4, .portfolio-piece5, .portfolio-piece6, .portfolio-piece7 {
+.caption {
+    display: inline-block;
+    position: relative;
+    margin:35px;
+}
+ 
+.caption img {
+    display: block;
+    max-width: 100%;
 }
 
-.desc1, .desc2, .desc3, .desc4, .desc5, .desc6, .desc7 {
-    position:relative;
+.caption::before,
+.caption::after {
     opacity: 0;
-    margin-top: -150px;
-    transition: all 250ms linear;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    transition: opacity 0.3s; 
 }
 
-.desc1[data-state="active"], .desc2[data-state="active"], .desc3[data-state="active"], .desc4[data-state="active"], .desc5[data-state="active"], .desc6[data-state="active"], .desc7[data-state="active"] {
-    position:relative;
-    opacity: 1;
-    margin-top: 0;
+.caption::before {
+    content: attr(data-title);
+    top: 0;
+    height: 30%;
+    background: #103E39;
+    font-size: 40px;
+    font-weight: 300;
 }
+
+.caption::after {
+    content: '\201C' attr(data-description) '\201D';
+    top: 30%;
+    height: 70%;
+    background: #3E776D;
+    font-size: 16px;
+    text-align: right;
+}
+
+.caption:hover::before,
+.caption:hover::after {
+    opacity: .8;
+}
+
     
 /* -------------------------- Media Queries ------------------------------*/
 @media only screen and (min-width: 25em){
