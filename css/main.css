@@ -61,12 +61,15 @@ body {
     padding:100px 0 150px;
 }
 
-.portfolio {
+.intro-section {
+}
+
+.portfolio-section {
     background-color: #6DCBB8;
     padding: 30px 0;
 }
 
-.contact {
+.contact-section {
     background-color: #F0FFF0;
 }
 
