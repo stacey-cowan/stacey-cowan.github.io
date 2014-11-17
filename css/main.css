@@ -31,7 +31,7 @@ body {
 }
 
 .logo {
-    width: 50px;
+    width: 75px;
 }
 
 .masthead {
@@ -53,16 +53,12 @@ body {
     padding: 200px 0 100px;
 }
 
-.off-center {
-    padding-left: 30%;
-}
-
 .center {
     text-align:center;
 }
 
 .intro {
-    padding-left: 40%;
+    padding-left: 30%;
 }
 
 .banner {
@@ -73,13 +69,13 @@ body {
 }
 
 .portfolio-desktop {
-    display:none;
+    display:block;
     background-color: #6DCBB8;
     padding: 30px 0;
 }
 
 .portfolio-mobile {
-    display:block;
+    display:none;
     background-color: #6DCBB8;
     padding: 30px 0;
 }
@@ -117,7 +113,7 @@ body {
     top: 0;
     height: 30%;
     background: #103E39;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .caption::after {
@@ -154,7 +150,7 @@ body {
 }
     
 /* -------------------------- Media Queries ------------------------------*/
-@media only screen and (min-width: 25em){
+@media only screen and (max-width: 25em){
     
     .portfolio-desktop {
         display:none;
@@ -175,7 +171,7 @@ body {
     
 }
 
-@media only screen and (min-width:38em){
+@media only screen and (max-width:38em){
     
     .portfolio-desktop {
         display:none;
@@ -186,7 +182,7 @@ body {
     }
     
     .logo {
-        width: 75px;
+        width: 50px;
     }
     
     .intro {
@@ -195,25 +191,27 @@ body {
   
 }
 
-@media only screen and (min-width: 55em){
+@media only screen and (max-width: 60em){
     
     .portfolio-desktop {
-        display:none;
+        display: none;
     }
     
     .portfolio-mobile {
-        display:block;
-    }
-
-}
-@media only screen and (min-width: 60em){
-    
-    .portfolio-desktop {
         display: block;
     }
     
-    .portfolio-mobile {
-        display:none;
+}
+
+@media only screen and (max-width: 75em){
+    
+    .caption::before {
+        font-size: 25px;
+    }
+    
+    .caption::after {
+        font-size: 16px;
+    
     }
     
 }
