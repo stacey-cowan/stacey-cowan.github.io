@@ -42,11 +42,6 @@ body {
     background-color: #6DCBB8;
     margin: 0;
     padding-top: 15px;
-    opacity: 1;
-}
-
-.masthead::after {
-    opacity: .8;
 }
 
 .title {
