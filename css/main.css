@@ -63,6 +63,10 @@ body {
 .intro-section {
 }
 
+.link {
+    margin: 0 auto;
+}
+
 .portfolio-desktop {
     display:block;
     background-color: #6DCBB8;
