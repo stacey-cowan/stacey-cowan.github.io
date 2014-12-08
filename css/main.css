@@ -64,6 +64,8 @@ body {
 }
 
 .link {
+    display: block;
+    width: 50px;
     margin: 0 auto;
 }
 
