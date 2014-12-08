@@ -110,15 +110,15 @@ body {
 .caption::before {
     content: attr(data-title);
     top: 0;
-    height: 30%;
+    height: 20%;
     background: #103E39;
     font-size: 35px;
 }
 
 .caption::after {
     content: '\201C' attr(data-description) '\201D';
-    top: 30%;
-    height: 70%;
+    top: 20%;
+    height: 80%;
     background: #3E776D;
     font-size: 16px;
     text-align: right;
@@ -126,7 +126,7 @@ body {
 
 .caption:hover::before,
 .caption:hover::after {
-    opacity: .8;
+    opacity: .95;
 }
 
 /* -------------------------- Portfolio Mobile ------------------------------*/
