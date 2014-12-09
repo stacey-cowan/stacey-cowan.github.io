@@ -12,8 +12,8 @@ html {
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
     
-    background-color: #F0FFF0;
-    color: #1D2121;
+    background-color: #feffff;
+    color: #103e39;
 }
 
 *, *:before, *:after {
@@ -45,7 +45,7 @@ body {
 }
 
 .title {
-    padding: 200px 0 100px;
+    padding: 200px 0 50px;
 }
 
 .center {
@@ -63,10 +63,23 @@ body {
 .intro-section {
 }
 
-.link {
+.error-page {
+    padding: 200px 3%;
+}
+
+.link,
+.link:link,
+.link:visited {
+    color:#3e776d;
     display: block;
     width: 50px;
     margin: 0 auto;
+}
+
+.link:hover,
+.link:active,
+.link:focus {
+	width: 75px;
 }
 
 .portfolio-desktop {
@@ -82,7 +95,29 @@ body {
 }
 
 .contact-section {
-    background-color: #F0FFF0;
+    background-color: #feffff;
+}
+
+.ease-all {
+	-webkit-transition: all 350ms ease-in-out;
+	-moz-transition: all 350ms ease-in-out;
+	-ms-transition: all 350ms ease-in-out;
+	-o-transition: all 350ms ease-in-out;
+	transition: all 350ms ease-in-out;
+}
+
+.text-link,
+.text-link:link,
+.text-link:visited {
+	color:#3e776d;
+	text-decoration:none;
+	border-bottom: 0px solid #3e776d;
+}
+
+.text-link:hover,
+.text-link:active,
+.text-link:focus {
+	border-bottom: 5px solid #3e776d;
 }
 
 
