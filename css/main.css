@@ -64,7 +64,12 @@ body {
     padding:100px 0 150px;
 }
 
-.intro-section {
+.intro-desktop {
+    display:block;
+}
+
+.intro-mobile {
+    display:none;
 }
 
 .error-page {
@@ -192,6 +197,14 @@ body {
 /* -------------------------- Media Queries ------------------------------*/
 @media only screen and (max-width: 25em){
     
+    .intro-mobile {
+        display:block;
+    }
+    
+    .intro-desktop {
+        display:none;
+    }
+    
     .portfolio-desktop {
         display:none;
     }
@@ -211,7 +224,15 @@ body {
     
 }
 
-@media only screen and (max-width:38em){
+@media only screen and (max-width:45em){
+    
+    .intro-mobile {
+        display:block;
+    }
+    
+    .intro-desktop {
+        display:none;
+    }
     
     .portfolio-desktop {
         display:none;
@@ -226,7 +247,7 @@ body {
     }
     
     .intro {
-        padding-left:20%;
+        padding-left:10%;
     }
   
 }
