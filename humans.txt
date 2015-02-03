@@ -9,7 +9,7 @@ Location: Ottawa, Canada
 
 # THANKS
 
-Mary Lou on CodDrops - Hover Caption Code Tutorial
+Mary Lou on CodDrops - Smooth Vertical Scrolling tutorial
 
 ---
 
