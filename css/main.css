@@ -25,6 +25,10 @@ body {
     padding: 0;
 }
 
+h1 {
+    display:none;
+}
+
 a:link,
 a:visited {
     text-decoration:none;
@@ -35,6 +39,7 @@ a:visited {
     display: block;
     width: 100%;
 }
+
 
 .ease-all {
 	-webkit-transition: all 250ms ease-in-out;
@@ -181,6 +186,10 @@ em {
 .error-section {
     
     padding:10em 5%;
+}
+
+.footer {
+    padding: 2.5em 2% 1em;
 }
 
      
