@@ -192,6 +192,7 @@ em {
 @media only screen and (min-width: 38em) {
     
    .header-bg {
+        z-index:0;
         position: absolute;
         top: 0;
         left: 0;
