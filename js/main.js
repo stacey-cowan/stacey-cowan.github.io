@@ -18,21 +18,37 @@
 */
 
 
-;(function ($) {
-  'use strict';
-  var content  = $('#main').smoothState({
-        // onStart runs as soon as link has been activated
-        onStart : {
-          
-          // Set the duration of our animation
-          duration: 350,
-          
-          // Alterations to the page
-          render: function () {
 
-            // Quickly toggles a class and restarts css animations
-            content.toggleAnimationClass('is-exiting');
-          }
-        }
-      }).data('smoothState'); // makes public methods available
+
+
+;(function ($) {
+    'use strict';
+    var $body = $('html, body'),
+        $main = $('#main'),
+        options = {
+            prefetch: true,
+            pageCacheSize: 4,
+            onStart: {
+                duration: 250,
+                render: function (url, $container) {
+                    $body.animate({
+                        scrollTop: 0
+                    });
+                    $main.addClass('is-exiting');
+                    smoothState.restartCSSAnimations();
+                }
+            },
+            onEnd: {
+                duration: 250,
+                render: function (url, $container, $content) {
+                    $main.removeClass('is-exiting');
+                    $main.html($content);
+                    $body.css('cursor', 'auto');
+                    $body.find('a').css('cursor', 'auto');
+                }
+            }
+        },
+        smoothState = $main.smoothState(options).data('smoothState');
+    window.smoothstate = smoothState;
 })(jQuery);
+

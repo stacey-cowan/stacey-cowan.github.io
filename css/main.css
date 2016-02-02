@@ -145,14 +145,7 @@ li {
     padding: 2.5em 0;
 }
 
-.section {
-    padding:2.5em 10%;
-    background-image: url("../img/triangle-bg1.svg");
-    background-repeat: no-repeat;
-    background-position: right;
-}
-
-.section-1 {
+.home-bg {
     padding: 10em 5%;
     background-image: url("../img/triangle-bg1.svg");
     background-repeat: no-repeat;
@@ -256,7 +249,7 @@ em {
   }
 
 .m-scene .scene_element-slow {
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
 
@@ -283,7 +276,7 @@ em {
   }
 
 .m-scene.is-exiting .scene_element {
-  animation-direction: alternate-reverse;
+  animation-direction: reverse;
 }
 
 

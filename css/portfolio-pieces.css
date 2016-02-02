@@ -1,3 +1,5 @@
+/*PIECES*/
+
 .piece-one {
     width: 21em;
     height: 9em;
@@ -5,6 +7,10 @@
     background-size: cover;
 }
     
+
+
+
+/* OVERLAY */
 
 .overlay {  
     width:inherit;
@@ -23,4 +29,14 @@
 .vert-align {
     color:rgba(79, 191, 176, .60);
     font-weight:700;
+}
+
+/*SECTIONS*/
+
+/*background*/
+.section {
+    padding:2.5em 10%;
+    background-image: url("../img/triangle-bg1.svg");
+    background-repeat: no-repeat;
+    background-position: right;
 }
