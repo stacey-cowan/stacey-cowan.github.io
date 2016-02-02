@@ -1,0 +1,26 @@
+.piece-one {
+    width: 21em;
+    height: 9em;
+    background: url("../img/portfolio-3.jpg");
+    background-size: cover;
+}
+    
+
+.overlay {  
+    width:inherit;
+    height: inherit;
+    background:rgba(0,0,0,.75);
+    text-align:center;
+    opacity:0;
+    -webkit-transition: opacity .40s ease;
+    -moz-transition: opacity .40s ease;
+}
+
+.overlay:hover {
+    opacity: .60;
+}
+
+.vert-align {
+    color:rgba(79, 191, 176, .60);
+    font-weight:700;
+}
