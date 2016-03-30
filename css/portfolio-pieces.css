@@ -3,11 +3,30 @@
 .piece-one {
     width: 21em;
     height: 9em;
-    background: url("../img/portfolio-3.jpg");
+    background: url("../img/moose-logo.svg");
     background-size: cover;
 }
     
+.piece-two {
+    width: 21em;
+    height: 9em;
+    background: url("../img/piece-2.png");
+    background-size: cover;
+}
 
+.piece-three {
+    width: 21em;
+    height: 9em;
+    background: url("../img/piece-3.png");
+    background-size: cover;
+}
+
+.piece-four {
+    width: 21em;
+    height: 9em;
+    background: url("../img/piece-4.png");
+    background-size: cover;
+}
 
 
 /* OVERLAY */
