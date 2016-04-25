@@ -28,6 +28,13 @@
     background-size: cover;
 }
 
+.piece-five {
+    width: 21em;
+    height: 9em;
+    background: url("../img/piece-5.png");
+    background-size: cover;
+}
+
 
 /* OVERLAY */
 
